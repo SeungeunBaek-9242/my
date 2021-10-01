@@ -34,3 +34,7 @@ print(10 ** 2)  #
 '''
 print(-11 % 5)    # 4
 print(11 % -5)    # -4
+
+
+EVEREST_HEIGHT = 8848  # 상수 변수
+mountain_name = "Everest"  # 파이썬 변수 명명법 : GNU Naming Convention
