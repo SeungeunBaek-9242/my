@@ -39,3 +39,22 @@ print(11 % -5)    # -4
 # 파이썬 변수 명명법 : GNU Naming Convention
 mountain_name = "Everest"
 EVEREST_HEIGHT = 8848  # 상수 변수
+
+
+# Boolean
+bool1 = False  # False
+bool2 = 0 or True  # True
+bool3 = 0 or False  # False
+bool4 = 0 and True  # 0
+bool5 = 0.0 and True  # 0.0
+bool6 = "" and True  # ""
+bool7 = "" or True  # True
+print(bool1, bool2, bool3, bool4, bool5, bool6, bool7)
+
+a = True
+b = False
+c = a and not b
+print(a and (not c or b))  # False
+
+
+# Comparisons
