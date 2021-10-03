@@ -57,4 +57,19 @@ c = a and not b
 print(a and (not c or b))  # False
 
 
-# Comparisons
+# Comparisons & Dictionary & for & if
+Anne = {"name": "Anne", "average_grade": 49, "recommended_by_tutor": True, "finished_intro_course": False, "intro_course_grade": 0}
+John = {"name": "John", "average_grade": 41, "recommended_by_tutor": False, "finished_intro_course": True, "intro_course_grade": 76}
+Frank = {"name": "Frank", "average_grade": 37, "recommended_by_tutor": True, "finished_intro_course": True, "intro_course_grade": 97}
+Victoria = {"name": "Victoria", "average_grade": 40, "recommended_by_tutor": True, "finished_intro_course": True, "intro_course_grade": 86}
+Mary = {"name": "Mary", "average_grade": 49, "recommended_by_tutor": False, "finished_intro_course": True, "intro_course_grade": 85}
+Sam = {"name": "Sam", "average_grade": 33, "recommended_by_tutor": False, "finished_intro_course": True, "intro_course_grade": 51}
+
+People = [Anne, John, Frank, Victoria, Mary, Sam]
+
+for p in People:
+    enroll_student = ((p['average_grade'] >= 40 and p['recommended_by_tutor']) or (p['finished_intro_course'] and p['intro_course_grade'] > 85))
+    if enroll_student:
+        print(p['name'])
+
+
